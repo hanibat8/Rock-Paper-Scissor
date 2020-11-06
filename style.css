@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    background-color:  rgb(220, 235, 240);
+    display: flex;
+}
+
+.container > *{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active{
+    background-color:   rgb(98, 164, 184);
+}
+
+.btn-container{
+    margin-top: 8rem;
+    display: flex;
+}
+
+.btn{
+    padding: 2rem;
+    height: 70px;
+    border: none;
+    background-color: rgb(214, 229, 236);
+    transition: all .1s linear,
+}
+
+.btn:hover{
+    background-color: rgb(171, 205, 221);
+}
+
+.btn-active{
+    background-color: rgb(55, 102, 124);
+}
+
+.btn-start{
+    z-index: 2;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:   rgb(77, 126, 141);
+    transition: all .2s ease-in;
+}
+
+.btn-start:hover{
+    background-color:   rgb(117, 184, 204);
+}
+
+.score{
+    position: absolute;
+    top:58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+}
+
+.game-over-container{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.445);
+    z-index: 1;
+}
+
+.game-over,
+.won{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6rem;
+    display: none;
+}
+
+.won{
+    top:25%;
+}
+
+.heading{
+    font-size: 4.5rem;
+    color: rgb(32, 29, 29);
+    margin-bottom: 8rem;
+}
+
+.ut-margin-right{
+    margin-right: 2rem;
+}

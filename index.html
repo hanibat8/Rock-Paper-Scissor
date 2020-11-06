@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel player active">
+            <h1 class="heading">PLAYER</h1>
+            <img src="img/rock.png" alt="player choice">
+            <div class="btn-container">
+                <button class="btn ut-margin-right" value="rock">ROCK</button>
+                <button class="btn ut-margin-right" value="paper">PAPER</button>
+                <button class="btn" value="scissor">SCISSOR</button>
+            </div>
+        </div>
+        <div class="panel computer">
+            <h1 class="heading">COMPUTER</h1>
+            <img src="img/rock.png" alt="computer choice">
+            <div class="btn-container">
+                <button class="btn ut-margin-right" value="rock">ROCK</button>
+                <button class="btn ut-margin-right" value="paper">PAPER</button>
+                <button class="btn" value="scissor">SCISSOR</button>
+            </div>
+        </div>
+        <div class="game-over-container">
+            <h1 class="game-over">GAME OVER</h1>
+            <h1 class="game-over won"></h1>
+        </div>
+        <button class="btn btn-start">START GAME</button>
+        <h2 class="score">SCORE:<span>PLAYER-<span class="player-score">0</span></span>
+            <span>COMPUTER-<span class="computer-score">0</span></span></h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
